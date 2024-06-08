@@ -30,8 +30,8 @@ jobs:
         uses: actions/checkout@v4
       - name: concat file
         run: |
-          curl "https://raw.githubusercontent.com/OliverWu515/python-hobby-project/master/README.md" -o "temp.md"
-          tail -n +2 "temp.md" >> "./python-hobby-project.md"
+          curl "https://raw.githubusercontent.com/OliverWu515/python-hobby-project/master/README.md" -o "temp.txt"
+          tail -n +2 "temp.txt" >> "./python-hobby-project.md"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
