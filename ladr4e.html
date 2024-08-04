@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《线性代数应该这样学（第四版）》（Linear Algebra Done Right, fourth edition）</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        body {
+            color: #333333;
+            background-color: #F0F0F0;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #CCCCCC;
+                background-color: #121212;
+            }
+            a {
+                color: #80D8FF;
+            }
+            a:visited {
+                color: #B39DDB;
+            }
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* 设置按钮之间的间距 */
+            margin-bottom: 20px;
+        }
+        .language-switcher button {
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .language-switcher button.active {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        切换语言（Language）：
+        <button id="btn-zh" class="active" onclick="switchLanguage('zh')">中文</button>
+        <button id="btn-en" onclick="switchLanguage('en')">English</button>
+    </div>
+    
+    <div id="content-zh" class="content active">
+        <h1 align="center">线性代数应该这样学</h1>
+        <h2 align="center">第四版</h2>
+        <h3 align="center">
+            作者：Sheldon Axler（谢尔顿·阿克斯勒）
+            <br>
+            译者：吴俊达、何阳
+        </h3>
+        <p>
+            很高兴，能和大家分享由我们翻译的《线性代数应该这样学》（<em>Linear Algebra Done Right</em>）第四版的<b>中文版</b>。该译本（与原书一样）采用知识共享署名-非商业性使用 4.0 国际许可协议进行许可。其电子版下载链接如下：（如果访问其中一个链接不成功，可尝试访问其他链接）
+        </p>
+        <ul>
+            <li>
+                <a href="LADR4eCN.pdf" target="_blank">《线性代数应该这样学（第四版）》中文版 PDF</a> （更新于北京时间 2024 年 8 月 3 日）
+            </li>
+            <li>
+                待补充……
+            </li>
+        </ul>
+        <p>
+            该译本尚未付印出版，无纸质版。如有需要，可自行打印。（请务必遵循上述许可协议及相关法律法规）
+        </p>
+        <hr>
+        <h3 align="center">
+            关于本书
+        </h3>
+        <p>
+            关于原书的介绍详见<a href="https://linear.axler.net/" target="_blank">作者主页的介绍</a>。本书的主要特色及讨论的主题摘录如下：
+            <blockquote cite="https://linear.axler.net/"  align="justify">
+                本书采用的新颖思路将行列式搁置于全书末尾，将重点放在线性代数的中心目标——理解有限维向量空间上线性算子的结构。作者在指明定义概念的动机以及简化证明方面下了一番功夫。每章附有大量有趣的习题，这些习题有助于学生理解与熟练运用线性代数的知识。<br><br>
+
+                本书除要求读者具有适当数学素养之外，不对预备知识做出要求。本书首先讨论向量空间、线性无关性、张成空间、基和维数，然后讨论线性映射、特征值和特征向量。接着，本书介绍内积空间，由此引出有限维向量空间中的谱定理及其若干推论（如奇异值分解）。此后，本书利用广义特征向量来在线性算子的结构方面给读者以启发。最后，借助交错多重线性型，以简洁的方式引入了行列式。
+                </blockquote>
+            
+            新版本相较于上一版的改动，节选整理如下：
+            <blockquote cite="https://linear.axler.net/"  align="justify">                
+                《线性代数应该这样学》（<em>Linear Algebra Done Right</em>）第四版新增了二百五十余道习题和七十余个例子，全书还讨论了数个新的主题且有多处改进。「第四版中的主要改进和补充」见<a href="https://linear.axler.net/LADR4e.pdf" target="_blank">原书 PDF 文件</a>的第 xvi 页（对应于<a href="LADR4eCN.pdf" target="_blank">译本</a>的第 xi 页）。
+                </blockquote>
+            希望我们的翻译能帮助大家跨越“语言关”，更深入地掌握书中关于向量空间和线性映射的基本内容。
+        </p>
+        <hr>
+        <p>
+            欢迎读者朋友们多提意见和建议，可将其发送至
+            <a href="mailto:ladr2024@163.com">ladr2024@163.com</a>。
+        </p>
+        <hr>
+        <h3>
+            相关链接
+        </h3>
+        <p>
+            <ul>
+                <li>
+                    <a href="https://linear.axler.net/" target="_blank">原书作者的页面</a>
+                </li>
+                <li>
+                    <a href="https://oliverwu515.github.io/" target="_blank">（译者）吴俊达的页面（即此页面）</a>
+                </li>
+                <li>
+                    <a href="https://linear.he-yang.top/" target="_blank">（译者）何阳的页面</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="content-en" class="content">
+        <h1 align="center"><em>Linear Algebra Done Right</em></h1>
+        <h2 align="center">fourth edition</h2>
+        <h3 align="center">
+            Author：Sheldon Axler
+            <br>
+            Translators：吴俊达(Oliver Wu)、何阳(He Yang)
+        </h3>
+        <p>
+            We are happy to share with you our <b>Chinese translation</b> of the fourth edition of <em>Linear Algebra Done Right</em> as an Open Access book. The electronic version of this translation with a Creative Commons BY-NC license is available without cost at the links below. (If one of the links doesn't work, just try the others.)
+        </p>
+        <ul>
+            <li>
+                <a href="LADR4eCN.pdf" target="_blank">PDF file for the <b>Chinese translation</b> of <em>Linear Algebra Done Right</em>, fourth edition</a>
+                <br>
+                (3 August 2024, CST)
+            </li>
+            <li>
+                To be filled...
+            </li>
+        </ul>
+        <p>
+            This translation has not yet been published by any publishing companies, so there is no print version. You can print it yourself if necessary. Please be sure to follow the above license conditions and related laws and regulations.
+        </p>
+        <hr>
+        <h3 align="center">
+            About the Book
+        </h3>
+        <p>
+            For more information about the English version, see <a href="https://linear.axler.net/" target="_blank">the author's page</a>. According to that page, the main features and topics of this book are as follows:
+            <blockquote cite="https://linear.axler.net/"  align="justify">
+                The novel approach taken here banishes determinants to the end of the book. The text focuses on the central goal of linear algebra: understanding the structure of linear operators on finite-dimensional vector spaces. The author has taken unusual care to motivate concepts and to simplify proofs. A variety of interesting exercises in each chapter helps students understand and manipulate the objects of linear algebra.<br>
+<br>
+                No prerequisites are assumed other than the usual demand for suitable mathematical maturity. Thus the text starts by discussing vector spaces, linear independence, span, basis, and dimension. The book then deals with linear maps, eigenvalues, and eigenvectors. Inner product spaces are then introduced, leading to the finite-dimensional spectral theorem and its consequences such as the singular value decomposition. Generalized eigenvectors are then used to provide insight into the structure of a linear operator. Determinants are cleanly introduced via alternating multilinear forms.
+                </blockquote>
+            The major improvements and additions (compared to the previous edition) are: 
+            <blockquote cite="https://linear.axler.net/"  align="justify">
+                The fourth edition of <em>Linear Algebra Done Right</em> contains over 250 new exercises and over 70 new examples, along with several new topics and multiple improvements throughout the book. See page xvi in <a href="https://linear.axler.net/LADR4e.pdf" target="_blank">the PDF file for the English version</a> (corresponding to page xi in the PDF file for <a href="LADR4eCN.pdf" target="_blank">the Chinese version</a>) for a list of major improvements and additions in the fourth edition.
+                </blockquote>
+            It's hoped that our translation will help you to overcome the "language barrier" and attain a deep understanding of vector spaces and linear maps.
+        </p>
+        <hr>
+        Comments or suggestions about the translation of the fourth edition of <em>Linear Algebra Done Right</em> can be sent to the translators at <a href="mailto:ladr2024@163.com">ladr2024@163.com</a>. 
+        <hr>
+        <h3>Related Links</h3>
+        <p>
+            <ul>
+                <li>
+                    <a href="https://linear.axler.net/" target="_blank">(Author) Sheldon Axler's Page</a>
+                </li>
+                <li>
+                    <a href="https://oliverwu515.github.io/" target="_blank">(Translator) Oliver Wu's Page (here)</a>
+                </li>
+                <li>
+                    <a href="https://linear.he-yang.top/" target="_blank">(Translator) He Yang's Page</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+    
+    <script>
+        function switchLanguage(lang) {
+            const englishContent = document.getElementById('content-en');
+            const chineseContent = document.getElementById('content-zh');
+            const btnEn = document.getElementById('btn-en');
+            const btnZh = document.getElementById('btn-zh');
+            
+            if (lang === 'en') {
+                englishContent.style.display = 'block';
+                chineseContent.style.display = 'none';
+                btnEn.classList.add('active');
+                btnZh.classList.remove('active');
+            } else if (lang === 'zh') {
+                chineseContent.style.display = 'block';
+                englishContent.style.display = 'none';
+                btnZh.classList.add('active');
+                btnEn.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
