@@ -24,7 +24,7 @@ title: OpenAuto 一周年生日纪
 
 前端页面需要依赖各仓库的信息来生成，所以我们在各页面下建立了 tag，通过该文件来识别课程类型与名称，再根据文件夹和文档内容生成页面。当时，为了实现心目中的课程资料目录架构，并不擅长前端编写的我自告奋勇地接手了这项任务，虽然结果还不错，但是过程嘛……（捂脸）
 
-<img src="https://cdn.jsdelivr.net/gh/OliverWu515/OliverWu515.github.io/pic/dirty%20commits.png" alt="dirty commits" style="zoom:60%;" />
+<div align=center> <img src="https://cdn.jsdelivr.net/gh/OliverWu515/OliverWu515.github.io/pic/dirty%20commits.png" alt="dirty commits" style="zoom:60%;"/> </div>
 
 上面工作的完成，宣告着 OpenAuto 2.0 的正式成型。12 月初，我们在自救群和空间发布了海报，得到了同学们热切的回应。
 
@@ -32,7 +32,7 @@ title: OpenAuto 一周年生日纪
 
 在项目正式发布之后，很少再有项目伊始那种大刀阔斧的增删，取而代之的是琐碎的维护和更新。每天，我辗转于各个仓库之间，创建 commit、审核与合并各种各样的 pr。虽然比较繁琐，但我看着资料越来越丰富、文档越来越完善，成就感难以言表。我过去一年的 commit 中，至少有 90% 是在 OpenAuto 中提交的。
 
-<img src="https://cdn.jsdelivr.net/gh/OliverWu515/OliverWu515.github.io/pic/commits.png" alt="commits" style="zoom:60%;" />
+<div align=center> <img src="https://cdn.jsdelivr.net/gh/OliverWu515/OliverWu515.github.io/pic/commits.png" alt="commits" style="zoom:60%;text-align: center;" /> </div>
 
 虽说总体框架不再有变动，核心维护团队成员总能以各种各样的新点子予我惊喜。比如，全新的 VTuber Logo 和周边贴纸；越来越丰富且友好的参与指南和 commit message 提示；利用 Hextra 短代码生成的文件下载界面和信息提示框；利用 GPT 生成的 AI 周报总结；随着仓库内容更新而自动触发的课程页面更新…… 在这样一个活跃的团队中工作，我也充满活力。
 
