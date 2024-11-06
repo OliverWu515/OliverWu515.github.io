@@ -1,11 +1,11 @@
 ---
 layout: default
-updateTime: 2024.10.27
+updateTime: 2024.11.7
 ---
 
 [GitHub 主页](https://github.com/OliverWu515)
 
--- 小项目 --
+-- 项目 --
 
 [线性代数应该这样学（第 4 版）中译本](./ladr4e.html)
 
@@ -14,6 +14,10 @@ updateTime: 2024.10.27
 -- 生活 --
 
 [个人简介](./short-bio.html)
+
+-- 数学与控制 --
+
+[线性系统理论补充1：可控标准型](./General-case-of-controllable-form.html)
 
 -- 杂谈 --
 
