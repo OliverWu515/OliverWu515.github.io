@@ -1,10 +1,10 @@
 ---
 layout: default
 updateTime: 2024.11.7
-title: 线性系统理论补充1：状态空间标准型
+title: 线性系统理论补充 1：状态空间标准型
 ---
 
-<h1 id="可控标准型的一般形式推导">可控标准型的一般形式推导</h1>
+<h2 id="可控标准型的一般形式推导">可控标准型的一般形式推导</h2>
 <p>对于一单输入单输出的传递函数 <span
 class="math display">\[\label{tf}\tag{1}
     G(s)=\frac{Y(s)}{U(s)}=\frac{b_{n-1}s^{n-1}+\cdots+b_1s+b_0}{s^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0}+d\]</span>
@@ -65,7 +65,7 @@ class="math display">\[y(t)=b_{n-1}x_n+\cdots+b_1x_2+b_0x_1+du(t)\]</span>
 这就是系统的输出方程。<span class="math inline">\(\eqref{state}\)</span>
 与 <span class="math inline">\(\eqref{output}\)</span>
 共同构成了系统的状态空间描述。</p>
-<h1 id="有共轭复数极点的系统之实现">有共轭复数极点的系统之实现</h1>
+<h2 id="有共轭复数极点的系统之实现">有共轭复数极点的系统之实现</h2>
 <p>考虑传递函数<span
 class="math display">\[G(s)=\frac{as+b}{(s-\sigma)^2+\omega^2}\]</span>
 其中各系数均为实数。 考虑将其按两个单极点进行部分分式展开 <span
