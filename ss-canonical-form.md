@@ -4,7 +4,7 @@ updateTime: 2024.11.8
 title: 线性系统理论补充 1：状态空间标准型
 ---
 
-[返回首页](./)     [转到第二部分](https://oliverwu.top/ss-canonical-form.html#conjugate)  [PDF 文档](https://oliverwu.top/file/ss-canonical-form.pdf)
+[返回首页](./)  |   [转到第二部分](https://oliverwu.top/ss-canonical-form.html#conjugate) | <a href="https://oliverwu.top/file/ss-canonical-form.pdf" target="_blank">PDF文档</a>
 
 <h2 id="controllable">可控标准型的一般形式推导</h2>
 <p>对于一单输入单输出的传递函数 <span
