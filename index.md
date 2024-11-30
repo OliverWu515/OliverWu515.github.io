@@ -1,9 +1,9 @@
 ---
 layout: default
-updateTime: 2024.11.7
+updateTime: 2024.11.21
 ---
 
-[GitHub 主页](https://github.com/OliverWu515)  [个人简介](./short-bio.html)
+[GitHub 主页](https://github.com/OliverWu515)&nbsp;&nbsp;&nbsp;&nbsp;[个人简介](./short-bio.html)
 
 -- 项目 --
 
