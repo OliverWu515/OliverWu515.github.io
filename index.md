@@ -1,13 +1,15 @@
 ---
 layout: default
-updateTime: 2024.11.21
+updateTime: 2025.1.17
 ---
 
 [GitHub 主页](https://github.com/OliverWu515)&nbsp;&nbsp;&nbsp;&nbsp;[个人简介](./short-bio.html)
 
 -- 项目 --
 
-[线性代数应该这样学（第 4 版）中译本](./ladr4e.html)
+[线性代数应该这样学（第 4 版）中译本](./ladr4e.html)（最近更新于 2024-11-30）
+
+[LaTeX 入门讲座](./latex-intro.html)（最近更新于 2025-01-17）
 
 -- DIY --
 
@@ -17,7 +19,7 @@ updateTime: 2024.11.21
 
 [线性系统理论补充 1：状态空间标准型](./ss-canonical-form.html)
 
-<a href="https://oliverwu.top/file/rayleigh-ritz.pdf" target="_blank">线性系统理论补充 2：特征值与二次型取值的关系——Rayleigh-Ritz不等式</a>
+<a href="https://oliverwu.top/file/rayleigh-ritz.pdf" target="_blank">线性系统理论补充 2：特征值与二次型取值的关系——Rayleigh-Ritz 不等式</a>
 
 -- 杂谈 --
 
