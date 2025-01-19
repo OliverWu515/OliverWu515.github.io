@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: math
 updateTime: 2024.11.8
 title: 线性系统理论补充 1：状态空间标准型
 ---
