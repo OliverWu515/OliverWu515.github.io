@@ -1,0 +1,18 @@
+---
+---
+
+@import "jekyll-theme-primer";
+
+/* 默认超链接样式 */
+a {
+  color: #0366d6;  /* GitHub 蓝色 */
+  text-decoration: underline;  /* 下划线 */
+  text-decoration-style: dashed;  /* 虚线下划线 */
+  text-underline-offset: 3px;  /* 调整下划线与文本的间距 */
+  text-decoration-thickness: 1px; /* 控制下划线的粗细 */
+}
+
+/* 悬停时的超链接样式 */
+a:hover {
+  text-decoration-style: solid;  /* 实线下划线 */
+}
