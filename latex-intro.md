@@ -2,6 +2,7 @@
 layout: default
 updateTime: 2025.1.17
 title: LaTeX 入门讲座
+mathjax: false
 ---
 
 [返回首页](./)

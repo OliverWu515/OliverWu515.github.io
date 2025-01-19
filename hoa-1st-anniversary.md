@@ -2,6 +2,7 @@
 layout: default
 updateTime: 2024.10.27
 title: OpenAuto 一周年生日纪
+mathjax: false
 ---
 
 [返回首页](./)

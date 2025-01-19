@@ -2,6 +2,7 @@
 layout: default
 updateTime: 2024.11.7
 title: 《中国哲学简史》读书笔记
+mathjax: false
 ---
 
 [返回首页](./) 

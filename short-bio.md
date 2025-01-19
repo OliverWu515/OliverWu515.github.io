@@ -2,6 +2,7 @@
 layout: default
 updateTime: 2024.8.6
 title: 个人简介
+mathjax: false
 ---
 
 [返回首页](./)   

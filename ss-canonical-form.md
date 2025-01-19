@@ -1,7 +1,8 @@
 ---
-layout: math
+layout: default
 updateTime: 2024.11.8
 title: 线性系统理论补充 1：状态空间标准型
+mathjax: true
 ---
 
 [返回首页](./)  |   [转到第二部分](https://oliverwu.top/ss-canonical-form.html#conjugate) | <a href="https://oliverwu.top/file/ss-canonical-form.pdf" target="_blank">PDF文档</a>

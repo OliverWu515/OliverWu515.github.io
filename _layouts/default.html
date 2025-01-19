@@ -26,9 +26,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
     <!-- 回顶部按钮 -->
-    <button id="back-to-top" onclick="scrollToTop()" title="Back to top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
+    <button id="back-to-top" onclick="scrollToTop()" title="Back to top">&#8679;</button>
     <script>
     // 当用户滚动时，显示/隐藏按钮
     window.onscroll = function() {
@@ -49,6 +47,25 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     </script>
-
+    {% if page.mathjax %}
+      <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      <script>
+        // 选择所有指定类名的 <span> 元素
+        const spanElements = document.querySelectorAll('span.math.display');
+        
+        // 遍历每个选中的 <span> 元素
+        spanElements.forEach((span) => {
+            span.style.display = 'inline-block'; // 必须设置为 block 或 inline-block 才能控制宽度和溢出
+            span.style.width = '100%';         
+            span.style.overflowX = 'auto';
+            span.style.overflowY = 'hidden';
+            span.addEventListener('click', () => {
+                // 将水平滚动位置重置为 0
+                span.scrollLeft = 0;
+                span.scrollTop = 0;
+            });
+        });
+      </script>
+    {% endif %}
   </body>
 </html>

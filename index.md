@@ -1,6 +1,7 @@
 ---
 layout: default
-updateTime: 2025.1.17
+updateTime: 2025.1.20
+mathjax: false
 ---
 
 [GitHub 主页](https://github.com/OliverWu515)&nbsp;&nbsp;&nbsp;&nbsp;[个人简介](./short-bio.html)

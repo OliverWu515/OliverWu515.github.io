@@ -54,6 +54,38 @@
         .language-switcher button.active {
             background-color: #0056b3;
         }
+        /* 回顶部按钮样式 */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;  /* 默认隐藏 */
+            width: 50px;
+            height: 50px;
+            background-color: #007bff; /* 按钮背景颜色 */
+            color: white;
+            border: none;
+            border-radius: 50%; /* 圆形按钮 */
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000; /* 确保按钮位于其他内容之上 */
+        }
+        /* 鼠标悬停时的样式 */
+        #back-to-top:hover {
+            background-color: #0056b3; /* 悬停时的颜色 */
+        }
+        /* 在手机屏幕上调整按钮大小和位置 */
+        @media screen and (max-width: 768px) {
+            #back-to-top {
+                width: 40px;
+                height: 40px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -206,6 +238,28 @@
                 btnEn.classList.remove('active');
             }
         }
+    </script>
+    <!-- 回顶部按钮 -->
+    <button id="back-to-top" onclick="scrollToTop()" title="Back to top">&#8679;</button>
+    <script>
+    // 当用户滚动时，显示/隐藏按钮
+    window.onscroll = function() {
+      toggleBackToTopButton();
+    };
+
+    function toggleBackToTopButton() {
+      var button = document.getElementById("back-to-top");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    }
+
+    // 平滑滚动到顶部
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     </script>
 </body>
 </html>
