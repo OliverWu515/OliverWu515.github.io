@@ -25,5 +25,30 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
+    <!-- 回顶部按钮 -->
+    <button id="back-to-top" onclick="scrollToTop()" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+    // 当用户滚动时，显示/隐藏按钮
+    window.onscroll = function() {
+      toggleBackToTopButton();
+    };
+
+    function toggleBackToTopButton() {
+      var button = document.getElementById("back-to-top");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    }
+
+    // 平滑滚动到顶部
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    </script>
+
   </body>
 </html>
