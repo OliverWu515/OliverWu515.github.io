@@ -1,6 +1,6 @@
 ---
 layout: default
-updateTime: 2025.1.20
+updateTime: 2025.1.21
 mathjax: false
 ---
 
@@ -8,9 +8,11 @@ mathjax: false
 
 -- 项目 --
 
-[线性代数应该这样学（第 4 版）中译本](./ladr4e.html)（最近更新于 2024-11-30）
+[线性代数应该这样学（第 4 版）中译本](./ladr4e.html)
 
-[LaTeX 入门讲座](./latex-intro.html)（最近更新于 2025-01-17）
+[LaTeX 入门讲座](./latex-intro.html)
+
+[《非线性与自适应控制》(Nonlinear and Adaptive Control) 笔记](./nac.html)
 
 -- DIY --
 
