@@ -26,7 +26,7 @@ mathjax: false
 
 -- 杂谈 --
 
-[OpenAuto 一周年生日纪](./hoa-1st-anniversary/index.html)
+[OpenAuto 一周年生日纪](./hoa-1st-anniversary)
 
 [《中国哲学简史》读书笔记](./short-history-of-chinese-philosophy.html)
 

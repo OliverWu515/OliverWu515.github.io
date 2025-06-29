@@ -5,7 +5,7 @@ title: OpenAuto 一周年生日纪
 mathjax: false
 ---
 
-[返回首页](./)
+[返回首页](../)
 
 本文已见于 [OpenAuto 一周岁生日纪念专栏](https://hoa.moe/news/1st-anniversary/)。
 
