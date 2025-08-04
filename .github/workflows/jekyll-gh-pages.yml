@@ -33,6 +33,21 @@ jobs:
           curl "https://raw.githubusercontent.com/OliverWu515/python-hobby-project/master/README.md" -o "temp.txt"
           tail -n +2 "temp.txt" >> "./python-hobby-project.md"
           rm "temp.txt"
+
+          # 获取提交数据并生成表格
+          curl -s "https://api.github.com/repos/OliverWu515/OliverWu515.github.io/commits?per_page=3" \
+            -H "Accept: application/vnd.github.v3+json" \
+            | jq -r '["| 日期 | 提交信息 | ", "|--------------|----------|", (.[] | [.commit.message | sub("\n.*"; "") | gsub("\\|"; " "), .commit.committer.date[:10]] | "| \(.[1]) | \(.[0]) |") ]' \
+            > "commits_table.txt"
+
+          # 插入到MD文件第5行后
+          awk -v n=5 -v table="$(cat commits_table.txt)" '
+            NR == n {print; print table; next}
+            {print}
+          ' "./index.md" > tmp && mv tmp "./index.md"
+
+          # 清理临时文件
+          rm "commits_table.txt"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
