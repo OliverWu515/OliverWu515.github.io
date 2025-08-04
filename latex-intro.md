@@ -1,6 +1,6 @@
 ---
 layout: default
-updateTime: 2025.1.17
+updateTime: 2025.8.4
 title: LaTeX 入门讲座
 mathjax: false
 ---
@@ -18,7 +18,7 @@ mathjax: false
 
 ## 文件下载
 
-<a href="https://oliverwu.top/file/LaTeX - Lecture - 2025.pptx" target="_blank">讲座 PPT（PPTX 格式）</a>（更新于 2025 年 1 月 17 日，5.31 M）
+<a href="https://oliverwu.top/file/LaTeX - Lecture - 2025.pptx" target="_blank">讲座 PPT（PPTX 格式）</a>（更新于 2025 年 8 月 4 日，5.44 M）
 
 <a href="https://oliverwu.top/file/LaTeX_materials.zip" target="_blank">补充材料（zip 压缩包）</a>（更新于 2025 年 1 月 16 日，0.99 M），其中各文件分别是：
 
