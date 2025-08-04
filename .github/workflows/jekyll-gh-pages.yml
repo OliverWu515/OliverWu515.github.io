@@ -30,9 +30,18 @@ jobs:
         uses: actions/checkout@v4
       - name: concat file
         run: |
-          curl "https://raw.githubusercontent.com/OliverWu515/python-hobby-project/master/README.md" -o "temp.txt"
+          curl -s "https://raw.githubusercontent.com/OliverWu515/python-hobby-project/master/README.md" -o "temp.txt"
           tail -n +2 "temp.txt" >> "./python-hobby-project.md"
           rm "temp.txt"
+
+          {
+            echo "最近更新："
+            echo "| 日期 | 更新简介 |"
+            echo "|----------|----------|"
+            curl -s https://api.github.com/repos/OliverWu515/OliverWu515.github.io/commits?per_page=3 | jq -r '.[] | [.commit.author.date[:10], .commit.message| sub("\n.*"; "") | gsub("\\|"; " ")] | "|  \(.[0])  |  \(.[1])  |"'
+          }  > output.txt
+          sed -i "5r output.txt" "index.md"
+          rm "output.txt"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
