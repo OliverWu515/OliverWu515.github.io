@@ -19,7 +19,7 @@ mathjax: false
 
 [用 Python 写着玩儿的几个小工具](./python-hobby-project.html)
 
-[实用电路一例：以 BA8206BA4 为主控芯片的多功能电风扇](https://mp.weixin.qq.com/s?__biz=MzkyNjU5NDY3Ng==&mid=2247483652&idx=1&sn=99dbac1e59adbb1c1e20f1248eb215ed&chksm=c3f5e2a6a3bd6ce597fcaca8286b1d26407e86ba52ffecd95d9a9c970c6d9a03b578f3ce1279&mpshare=1&scene=23&srcid=07150KfYCkJbokqiYuvekJKv&sharer_shareinfo=c1096e02fadf38c70a532aab2c4962c8&sharer_shareinfo_first=c1096e02fadf38c70a532aab2c4962c8#rd)
+[实用电路一例：以 BA8206BA4 为主控芯片的多功能电风扇](https://mp.weixin.qq.com/s?__biz=MzkyNjU5NDY3Ng==&mid=2247483652&idx=1&sn=99dbac1e59adbb1c1e20f1248eb215ed&chksm=c3f5e2a6a3bd6ce597fcaca8286b1d26407e86ba52ffecd95d9a9c970c6d9a03b578f3ce1279)
 
 <!-- -- 数学与控制 --
 
