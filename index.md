@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: front
 updateTime: 2025.8.7
 mathjax: false
 ---
