@@ -38,5 +38,5 @@ mathjax: false
 
 ## 延伸阅读
 
-- [Markdown 基本语法 | Markdown 教程](https://markdown.com.cn/basic-syntax/)
+- [Markdown 基本语法](https://markdown.com.cn/basic-syntax/)
 - [Typst Documentation](https://typst.app/docs/)

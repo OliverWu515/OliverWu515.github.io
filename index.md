@@ -11,6 +11,8 @@ mathjax: false
 
 [线性代数应该这样学（第 4 版）（Linear Algebra Done Right, 4th edition）中译本](./ladr4e.html)
 
+[HITSZ 自动化课程攻略共享计划](https://github.com/HITSZ-OpenAuto)，[网站](https://hoa.moe)
+
 [LaTeX 入门讲座](./latex-intro.html)
 
 [《非线性与自适应控制》(Nonlinear and Adaptive Control) 笔记](./nac.html)
