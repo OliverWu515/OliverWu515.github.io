@@ -29,6 +29,10 @@ mathjax: false
 
 <a href="https://oliverwu.top/file/rayleigh-ritz.pdf" target="_blank">线性系统理论补充 2：特征值与二次型取值的关系——Rayleigh-Ritz 不等式</a> -->
 
+-- 笔记 --
+
+<a href="https://oliverwu.top/file/fast_lio_note.pdf" target="_blank">FAST_LIO 论文梳理</a>
+
 -- 杂谈 --
 
 [OpenAuto 一周年生日纪](./hoa-1st-anniversary)
