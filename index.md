@@ -9,17 +9,16 @@ mathjax: false
 
 -- 项目 --
 
-[线性代数应该这样学（第 4 版）（Linear Algebra Done Right, 4th edition）中译本](./ladr4e.html)
+[线性代数应该这样学（第 4 版）（Linear Algebra Done Right, 4th edition）中译本](./ladr4e.html)；[作者主页](https://linear.axler.net)
 
 [HITSZ 自动化课程攻略共享计划](https://github.com/HITSZ-OpenAuto)，[网站](https://hoa.moe)
 
 [LaTeX 入门讲座](./latex-intro.html)
 
-[《非线性与自适应控制》(Nonlinear and Adaptive Control) 笔记](./nac.html)
-
 -- DIY --
 
-[On-Manifold MPC 算法复现](https://github.com/oliverwu515/ommpc_controller)，[结果展示与理论推导](https://zhuanlan.zhihu.com/p/1990333405355874220)
+On-Manifold MPC 算法复现：
+<a href="https://www.github.com/OliverWu515/ommpc_controller"><img src="https://img.shields.io/github/stars/OliverWu515/ommpc_controller" alt="stars_ommpc" style="zoom:80%;"></a>；[结果展示与理论推导](https://zhuanlan.zhihu.com/p/1990333405355874220)
 
 [用 Python 写着玩儿的几个小工具](./python-hobby-project.html)
 
@@ -35,10 +34,16 @@ mathjax: false
 
 <a href="https://oliverwu.top/file/fast_lio_note.pdf" target="_blank">FAST_LIO 论文梳理</a>
 
--- 杂谈 --
+[《非线性与自适应控制》(Nonlinear and Adaptive Control) 笔记](./nac.html)
+
+-- 随想 --
 
 [OpenAuto 一周年生日纪](./hoa-1st-anniversary)
 
 [《中国哲学简史》读书笔记](./short-history-of-chinese-philosophy.html)
+
+-- 杂项 --
+
+[米时典 Seedict 福州话词典](https://seedict.com/)：留住乡音，记住乡愁。很有趣也很有意义的项目，本人曾参与文本数位化工作。
 
 Please stay tuned!
