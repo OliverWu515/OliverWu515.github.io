@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: concat file
         run: |
           curl "https://raw.githubusercontent.com/OliverWu515/python-hobby-project/master/README.md" -o "temp.txt"
@@ -44,14 +44,17 @@ jobs:
           sed -i "6r output.txt" "index.md"
           rm "output.txt"
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
+        with:
+          # Preserve the hidden-file inclusion behavior of v3.
+          include-hidden-files: true
 
   # Deployment job
   deploy:
@@ -63,4 +66,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
