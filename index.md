@@ -18,7 +18,7 @@ mathjax: false
 -- DIY --
 
 On-Manifold MPC 算法复现：
-<a href="https://www.github.com/OliverWu515/ommpc_controller"><img src="https://img.shields.io/github/stars/OliverWu515/ommpc_controller" alt="stars_ommpc" style="zoom:80%;"></a>；[结果展示与理论推导](https://zhuanlan.zhihu.com/p/1990333405355874220)
+<a href="https://www.github.com/OliverWu515/ommpc_controller"><img src="https://img.shields.io/github/stars/OliverWu515/ommpc_controller" alt="stars_ommpc"></a>；[结果展示与理论推导](https://zhuanlan.zhihu.com/p/1990333405355874220)
 
 [用 Python 写着玩儿的几个小工具](./python-hobby-project.html)
 
